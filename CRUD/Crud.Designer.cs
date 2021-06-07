@@ -1,7 +1,7 @@
 ﻿
 namespace CRUD
 {
-    partial class Form1
+    partial class Crud
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,10 @@ namespace CRUD
             // 
             // dg_Productos
             // 
+            this.dg_Productos.AllowUserToAddRows = false;
+            this.dg_Productos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dg_Productos.BackgroundColor = System.Drawing.Color.White;
+            this.dg_Productos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Productos.Location = new System.Drawing.Point(52, 321);
             this.dg_Productos.Name = "dg_Productos";
@@ -198,7 +202,7 @@ namespace CRUD
             this.label6.TabIndex = 17;
             this.label6.Text = "Stock:";
             // 
-            // Form1
+            // Crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,8 +224,9 @@ namespace CRUD
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dg_Productos);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Crud";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CRUD Productos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_Productos)).EndInit();
             this.ResumeLayout(false);

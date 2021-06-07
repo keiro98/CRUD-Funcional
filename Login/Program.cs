@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CRUD
+namespace Login
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace CRUD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Crud());
+            Application.Run(new Login());
         }
     }
 }

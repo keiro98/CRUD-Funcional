@@ -8,9 +8,9 @@ using System.Data;
 
 namespace CRUD
 {
-    class Productos
+    public class Productos
     {
-        static string ConnectionString = "Data Source=DESKTOP-O3JM00N;Initial Catalog=Practica;Integrated Security =true";
+        public static string ConnectionString = "Data Source=DESKTOP-O3JM00N;Initial Catalog=Practica;Integrated Security =true";
 
         public static DataTable LeerDatos()
         {
@@ -35,7 +35,7 @@ namespace CRUD
             return dt_ListaProductos;
         }
 
-        public static bool Guarda_Registro(string Nombre, string Descripcion,string Marca,string Precio,string Stock)
+        public static bool Guarda_Registro(string Nombre, string Descripcion, string Marca, string Precio, string Stock)
         {
             bool Exito = false;
 
@@ -119,8 +119,6 @@ namespace CRUD
 
             return Exito;
         }
-
-
     }
 }
 
